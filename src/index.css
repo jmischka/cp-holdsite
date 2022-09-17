@@ -1,8 +1,47 @@
+@font-face {
+  font-family: 'BrotherReg';
+  src: local('BrotherReg'),
+      url('./assets/Brother1816-Regular.woff2') format('woff2'),
+      url('./assets/Brother1816-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrotherBold';
+  src: local('BrotherBold'),
+      url('./assets/Brother1816-Medium.woff2') format('woff2'),
+      url('./assets/Brother1816-Medium.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: local('IvyMode'),
+      url('./assets/IvyMode-Regular.woff2') format('woff2'),
+      url('./assets/IvyMode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: BrotherReg, 'Helvetica Neue',
     sans-serif;
+  font-weight: normal;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

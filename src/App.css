@@ -1,38 +1,121 @@
 .App {
+  margin: 0;
+  height: auto;
+  min-height: 100vh;
+  background-color:#9bd0c5;
+  color: #2e3469;
+}
+
+.App-header {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+  padding: 35px 25px;
+}
+
+.App-header img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+.App-header h1 {
+  font-family: IvyMode, serif;
+  font-size: 72px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  margin: 0;
+}
+
+.App-header span.tagline {
+  display: block;
+  margin: 6px 0 0;
+  font-family: BrotherReg, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.App-body {
+  margin: 25px auto 0;
+  width: 780px;
+  height: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin: 0 0 25px;
+  font-family: BrotherReg, 'Helvetica Neue', sans-serif;
+  font-size: 125px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -3px;
+  animation: App-fadeIn .7s linear;
+}
+
+p, a {
+  display: block;
+  margin: 0;
+  font-family: BrotherReg, 'Helvetica Neue', sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+a {
+  color: #2e3469 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.Boat-art {
+  position: relative;
+  margin: 100px 0 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2e3469;
+  overflow: visible;
+}
+
+.Boat-art img {
+  position: absolute;
+  top: -91px;
+  width: 150px;
+  height: auto;
+  animation: App-logo-glide infinite 20s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-glide infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes App-fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes App-logo-glide {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 100%;
   }
 }

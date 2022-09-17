@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './assets/IvyMode-Regular.woff';
+import './assets/IvyMode-Regular.woff2';
+import './assets/Brother1816-Regular.woff';
+import './assets/Brother1816-Regular.woff2';
+import './assets/Brother1816-Medium.woff';
+import './assets/Brother1816-Medium.woff2';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
