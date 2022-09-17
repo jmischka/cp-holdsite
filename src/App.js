@@ -11,7 +11,7 @@ function App() {
       <div className='App-body'>
         <h2>New Website<br />Coming Soon</h2>
         <p>For more information about our services or to speak with a member of our team please contact us at:</p>
-        <p>800.222.3456</p>
+        <p>305.491.4363</p>
         <a href='mailto: info@cruiseportdestinations.com'>info@cruiseportdestinations.com</a>
       </div>
       <div className='Boat-art'>
